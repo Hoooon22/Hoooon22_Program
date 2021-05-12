@@ -7,6 +7,8 @@
         mc:Ignorable="d"
         Title="Login" Height="450" Width="800">
     <Grid>
-        
+        <Grid HorizontalAlignment="Center" Height="200" Margin="0,0,0,0" VerticalAlignment="Center" Width="360">
+            
+        </Grid>
     </Grid>
 </Window>
