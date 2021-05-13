@@ -7,8 +7,12 @@
         mc:Ignorable="d"
         Title="Login" Height="450" Width="800">
     <Grid>
-        <Grid HorizontalAlignment="Center" Height="200" Margin="0,0,0,0" VerticalAlignment="Center" Width="360">
-            
+        <Grid HorizontalAlignment="Center" Name="LoginGrid" Height="200" Margin="0,0,0,0" VerticalAlignment="Center" Width="360">
+            <Border BorderBrush="Black" BorderThickness="2">
+                <StackPanel HorizontalAlignment="Left" Name="LoginTextSP" Height="180" Margin="10,10,0,10" VerticalAlignment="Top" Width="200">
+                    
+                </StackPanel>
+            </Border>
         </Grid>
     </Grid>
 </Window>
