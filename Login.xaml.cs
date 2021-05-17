@@ -23,5 +23,25 @@ namespace Hoooon22_Program
         {
             InitializeComponent();
         }
+
+        // GotFocus ID, PW
+        private void IDTextBox_GotFocus(object sender, RoutedEventArgs e)
+        {
+            IDTextBox.Text = "";
+        }
+        private void PwTextBox_GotFocus(object sender, RoutedEventArgs e)
+        {
+            PwTextBox.Text = "";
+        }
+
+        // LostFocus ID, PW
+        private void IDTextBox_LostFocus(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void PwTextBox_LostFocus(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

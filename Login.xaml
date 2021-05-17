@@ -10,15 +10,19 @@
         <Grid HorizontalAlignment="Center" Name="LoginGrid" 
               Height="200" Margin="0,0,0,0" VerticalAlignment="Center" Width="360">
             <Border BorderBrush="Black" BorderThickness="2">
-
+                <!-- ID, PW -->
                 <Grid HorizontalAlignment="Left" VerticalAlignment="Center" Name="LoginTextSP" 
                             Height="100" Margin="10,0,0,10" Width="200">
                     <Border BorderBrush="Blue" BorderThickness="0.5"></Border>
                     <TextBox Name="IDTextBox" VerticalAlignment="Top"
-                             Height="20" TextWrapping="Wrap" Text="ID" Margin="20, 20, 20, 0"/>
+                             Height="20" TextWrapping="Wrap" Text="ID" Margin="20, 20, 20, 0"
+                             GotFocus="IDTextBox_GotFocus" LostFocus="IDTextBox_LostFocus"/>
                     <TextBox Name="PwTextBox" VerticalAlignment="Top"
-                             Height="20" TextWrapping="Wrap" Text="Password" Margin="20, 60, 20, 0"/>
+                             Height="20" TextWrapping="Wrap" Text="Password" Margin="20, 60, 20, 0"
+                             GotFocus="PwTextBox_GotFocus" LostFocus="PwTextBox_LostFocus"/>
                 </Grid>
+                
+                
             </Border>
         </Grid>
     </Grid>
