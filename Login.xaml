@@ -7,13 +7,18 @@
         mc:Ignorable="d"
         Title="Login" Height="450" Width="800">
     <Grid>
-        <Grid HorizontalAlignment="Center" Name="LoginGrid" Height="200" Margin="0,0,0,0" VerticalAlignment="Center" Width="360">
+        <Grid HorizontalAlignment="Center" Name="LoginGrid" 
+              Height="200" Margin="0,0,0,0" VerticalAlignment="Center" Width="360">
             <Border BorderBrush="Black" BorderThickness="2">
-                <StackPanel HorizontalAlignment="Left" Name="LoginTextSP" Height="180" Margin="10,10,0,10" VerticalAlignment="Top" Width="200">
-                    <TextBox Name="IdTextBox" Height="23" TextWrapping="Wrap" Text="TextBox" Margin="20, 50, 20, 0"/>
-                    <TextBox Name="PwTextBox" Height="23" TextWrapping="Wrap" Text="TextBox" Margin="20, 50, 20, 50"/>
 
-                </StackPanel>
+                <Grid HorizontalAlignment="Left" VerticalAlignment="Center" Name="LoginTextSP" 
+                            Height="100" Margin="10,0,0,10" Width="200">
+                    <Border BorderBrush="Blue" BorderThickness="0.5"></Border>
+                    <TextBox Name="IDTextBox" VerticalAlignment="Top"
+                             Height="20" TextWrapping="Wrap" Text="ID" Margin="20, 20, 20, 0"/>
+                    <TextBox Name="PwTextBox" VerticalAlignment="Top"
+                             Height="20" TextWrapping="Wrap" Text="Password" Margin="20, 60, 20, 0"/>
+                </Grid>
             </Border>
         </Grid>
     </Grid>
