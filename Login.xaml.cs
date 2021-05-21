@@ -45,5 +45,20 @@ namespace Hoooon22_Program
         }
 
         // Button 
+        private void LoginButton_Click(object sender, RoutedEventArgs e)
+        {
+            // 이 후 보안 수정
+            if (IDTextBox.Text == "Hello" && PwTextBox.Text == "World")
+            {
+                MainWindow mainWindow = new MainWindow();
+                MessageBox.Show($"로그인 성공!");
+                mainWindow.Show();
+                Close();
+            }
+            else
+            {
+                MessageBox.Show($"로그인 실패...");
+            }
+        }
     }
 }
