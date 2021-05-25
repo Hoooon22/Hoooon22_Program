@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace Hoooon22_Program
 {
     /// <summary>
-    /// Financial_Management.xaml에 대한 상호 작용 논리
+    /// Finance.xaml에 대한 상호 작용 논리
     /// </summary>
-    public partial class Financial_Management : Window
+    public partial class Finance : Window
     {
-        public Financial_Management()
+        public Finance()
         {
             InitializeComponent();
         }

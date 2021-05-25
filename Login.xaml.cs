@@ -50,7 +50,7 @@ namespace Hoooon22_Program
             // 이 후 보안 수정
             if (IDTextBox.Text == "Hello" && PwTextBox.Text == "World")
             {
-                Financial_Management mainWindow = new Financial_Management();
+                Finance mainWindow = new Finance();
                 MessageBox.Show($"로그인 성공!");
                 mainWindow.Show();
                 Close();
