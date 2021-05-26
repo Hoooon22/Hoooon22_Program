@@ -23,5 +23,10 @@ namespace Hoooon22_Program
         {
             InitializeComponent();
         }
+
+        private void Submit_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

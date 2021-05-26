@@ -78,6 +78,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Content.cs" />
     <Compile Include="Finance.xaml.cs">
       <DependentUpon>Finance.xaml</DependentUpon>
     </Compile>

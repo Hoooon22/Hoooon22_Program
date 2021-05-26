@@ -5,8 +5,50 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Hoooon22_Program"
         mc:Ignorable="d"
-        Title="Add_Content" Height="450" Width="400">
+        Title="Add_Content" Height="450" Width="400" ResizeMode="NoResize">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid Height="300" HorizontalAlignment="Center" VerticalAlignment="Center"
+                  Margin="0, 0, 0, 0" Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Label Content="Date" FontSize="15" VerticalAlignment="Center" FontWeight="Bold"
+                       Grid.Column="0" Grid.Row="0"/>
+            <TextBox Name="Date" Width="150" VerticalAlignment="Center"
+                         Grid.Column="1" Grid.Row="0" />
+            <Label Content="Title" FontSize="15" VerticalAlignment="Center" FontWeight="Bold"
+                       Grid.Column="0" Grid.Row="1"/>
+            <TextBox Name="Title" Width="150" VerticalAlignment="Center"
+                         Grid.Column="1" Grid.Row="1" />
+            <Label Content="Amount" FontSize="15" VerticalAlignment="Center" FontWeight="Bold"
+                       Grid.Column="0" Grid.Row="2"/>
+            <TextBox Name="Amount" Width="150" VerticalAlignment="Center"
+                         Grid.Column="1" Grid.Row="2" />
+            <Label Content="Source" FontSize="15" VerticalAlignment="Center" FontWeight="Bold"
+                       Grid.Column="0" Grid.Row="3"/>
+            <TextBox Name="Source" Width="150" VerticalAlignment="Center"
+                         Grid.Column="1" Grid.Row="3" />
+            <Label Content="Remarks" FontSize="15" VerticalAlignment="Center" FontWeight="Bold"
+                       Grid.Column="0" Grid.Row="4"/>
+            <TextBox Name="Remarks" Width="150" VerticalAlignment="Center"
+                         Grid.Column="1" Grid.Row="4" />
+        </Grid>
+
+        <Button Name="Submit" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top"
+                Height="30" Width="100" Content="Submit"
+                Click="Submit_Click"/>
     </Grid>
 </Window>
