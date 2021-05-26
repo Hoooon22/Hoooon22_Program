@@ -48,7 +48,7 @@ namespace Hoooon22_Program
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
             // 이 후 보안 수정
-            if (IDTextBox.Text == "Hello" && PwTextBox.Text == "World")
+            if (IDTextBox.Text == "ID" && PwTextBox.Text == "Password")
             {
                 Finance mainWindow = new Finance();
                 MessageBox.Show($"로그인 성공!");
