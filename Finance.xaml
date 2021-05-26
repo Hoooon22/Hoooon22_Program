@@ -14,7 +14,12 @@
         
         <Grid Name="Content" Margin="10,10,10,10" Grid.Column="0" >
             <Border BorderBrush="Black" BorderThickness="2" CornerRadius="4"/>
-        
+            
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <WrapPanel>
+                    
+                </WrapPanel>
+            </ScrollViewer>
         </Grid>
     </Grid>
 </Window>
