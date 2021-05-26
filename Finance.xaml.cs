@@ -59,5 +59,11 @@ namespace Hoooon22_Program
             FrameworkElement rootElement = this.Content as FrameworkElement;
             rootElement.LayoutTransform = scale;
         }
+
+        // Add Content
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
