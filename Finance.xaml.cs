@@ -63,7 +63,8 @@ namespace Hoooon22_Program
         // Add Content
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            Add_Content add_Content = new Add_Content();
+            add_Content.Show();
         }
     }
 }
