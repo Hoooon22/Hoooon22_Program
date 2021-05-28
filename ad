@@ -1,0 +1,175 @@
+[33mcommit 1befc38ccbdd6ea8da46b41edaa050edd2cb570e[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Hoooon22 <momo990305@gmail.com>
+Date:   Thu May 27 21:54:21 2021 +0900
+
+    remove cs
+
+[33mcommit 14c46cfff9d8d988494b4e01f87faf4f72b02318[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Hoooon22 <momo990305@gmail.com>
+Date:   Thu May 27 21:45:30 2021 +0900
+
+    create MySQLManager.cs
+
+[33mcommit 01b2a7daf628d36e0dc724accdaebcd295476300[m
+Author: Hoooon22 <momo990305@gmail.com>
+Date:   Thu May 27 21:43:25 2021 +0900
+
+    sync
+
+[33mcommit d996ad7ddaf829c68644b88b07a4fad75ce5d436[m
+Author: Hoooon22 <momo990305@gmail.com>
+Date:   Wed May 26 16:33:49 2021 +0900
+
+    Content.cs
+
+[33mcommit 4239896a94f0753d8725d7975e2a9eab2eaa57e2[m
+Author: Hoooon22 <momo990305@gmail.com>
+Date:   Wed May 26 16:19:15 2021 +0900
+
+    Add_Content.xaml Design / Create Content.cs
+
+[33mcommit 7599967af2506daf6585942612135a1f5625c27d[m
+Author: Hoooon22 <momo990305@gmail.com>
+Date:   Wed May 26 15:33:56 2021 +0900
+
+    create Add_Content.xaml
+
+[33mcommit 732d501a2f115a574326da856277c85307074c9f[m
+Author: Hoooon22 <momo990305@gmail.com>
+Date:   Wed May 26 15:29:49 2021 +0900
+
+    Border ok
+
+[33mcommit 1d3501557789cc03b262b82eb5ef9230fa53a47f[m
+Author: Hoooon22 <momo990305@gmail.com>
+Date:   Wed May 26 14:35:45 2021 +0900
+
+    add scrollpanel
+
+[33mcommit ee14f8cfae4ff4b77032c7d42786842512e18c48[m
+Author: Hoooon22 <momo990305@gmail.com>
+Date:   Wed May 26 14:28:06 2021 +0900
+
+    Finance Content Design
+
+[33mcommit 555913394603d11787e884faa03987c2ccb61224[m
+Author: Hoooon22 <momo990305@gmail.com>
+Date:   Tue May 25 20:59:53 2021 +0900
+
+    Create Finance.xaml
+
+[33mcommit 1e6c01250bb7b669e84f825f0d653868da6c08d9[m
+Merge: 03aa60c 77166d1
+Author: Hoooon22 <momo990305@gmail.com>
+Date:   Mon May 24 19:21:18 2021 +0900
+
+    Merge branch 'master' of https://github.com/Hoooon22/Hoooon22_Program
+
+[33mcommit 03aa60c064d77e4af85880f908cc7e90c9b6623a[m
+Author: Hoooon22 <momo990305@gmail.com>
+Date:   Mon May 24 19:19:14 2021 +0900
+
+    create Financial_Management.xaml
+
+[33mcommit 77166d1bcdae37d39d446970c037510d934dba56[m
+Author: Kim Jihoon <62587286+Hoooon22@users.noreply.github.com>
+Date:   Fri May 21 22:26:32 2021 +0900
+
+    Update README.md
+
+[33mcommit cb3bbf7cd4caa6adbff7e8106c06b2abe2279a9a[m
+Author: Hoooon22 <momo990305@gmail.com>
+Date:   Fri May 21 22:25:24 2021 +0900
+
+    LoginButton_Click ver01
+
+[33mcommit ae684b824f294af45d8bb2e66c553938130a2e95[m
+Author: Hoooon22 <momo990305@gmail.com>
+Date:   Thu May 20 23:44:18 2021 +0900
+
+    sync
+
+[33mcommit 2a84d275bf74edfc66c68d8cdcef81545d6005e2[m
+Author: Hoooon22 <momo990305@gmail.com>
+Date:   Thu May 20 20:07:23 2021 +0900
+
+    add LoginButton
+
+[33mcommit 19a4a617792f6631f3fd1de6b74fd57d25cee325[m
+Author: Hoooon22 <momo990305@gmail.com>
+Date:   Wed May 19 23:44:25 2021 +0900
+
+    sync
+
+[33mcommit a68acf6c05f97c67028fbb39aed3156404d3d8f3[m
+Author: Hoooon22 <momo990305@gmail.com>
+Date:   Tue May 18 23:37:07 2021 +0900
+
+    sync
+
+[33mcommit 5fe80185f0f03be8a179a0d8a30ce14586cf3f96[m
+Author: Hoooon22 <momo990305@gmail.com>
+Date:   Mon May 17 19:35:31 2021 +0900
+
+    GotFocus ID, PW
+
+[33mcommit 8a1dd26dc8c00e07aa1a74a2e8fac5b39950f813[m
+Author: Hoooon22 <momo990305@gmail.com>
+Date:   Mon May 17 19:25:22 2021 +0900
+
+    Design Id, Pw
+
+[33mcommit 1b6ce7d45670fc2da8d4d6b5a6eca3bce8527d6a[m
+Author: Hoooon22 <momo990305@gmail.com>
+Date:   Mon May 17 18:52:34 2021 +0900
+
+    Id, Pw
+
+[33mcommit 51b4030c266e55f12c330de5bff260915633ec83[m
+Author: Hoooon22 <momo990305@gmail.com>
+Date:   Thu May 13 15:48:08 2021 +0900
+
+    grid border
+
+[33mcommit 7a222aff55364b586fc7a0d314e55b29ad81f734[m
+Merge: 46f925d 3281a90
+Author: Hoooon22 <momo990305@gmail.com>
+Date:   Wed May 12 22:03:43 2021 +0900
+
+    Merge branch 'master' of https://github.com/Hoooon22/Hoooon22_Program
+
+[33mcommit 46f925d857ac09f9102c69064ebae839b2eb940a[m
+Author: Hoooon22 <momo990305@gmail.com>
+Date:   Wed May 12 22:02:53 2021 +0900
+
+    create Center Grid
+
+[33mcommit 3281a90ee996b75695efd6a0fa935ba3565788e6[m
+Author: Kim Jihoon <62587286+Hoooon22@users.noreply.github.com>
+Date:   Mon May 10 23:24:37 2021 +0900
+
+    Update README.md
+
+[33mcommit 156de9a7ecdbe24e58d66ad62e8a336161065f2a[m
+Author: Kim Jihoon <62587286+Hoooon22@users.noreply.github.com>
+Date:   Sat May 8 01:11:30 2021 +0900
+
+    Create README.md
+
+[33mcommit ec3422c54bee71bedffc63f1ff34890e36483f30[m
+Author: Hoooon22 <momo990305@gmail.com>
+Date:   Fri May 7 19:44:04 2021 +0900
+
+    create Login.xaml
+
+[33mcommit 956d82f175548c2f8de629aca97f361fa2540c2b[m
+Author: Hoooon22 <momo990305@gmail.com>
+Date:   Fri May 7 19:13:51 2021 +0900
+
+    초기 커밋.
+
+[33mcommit 6a4b263bd6930d34a93a8dfb27fe28c590a6ca9f[m
+Author: Hoooon22 <momo990305@gmail.com>
+Date:   Fri May 7 19:13:48 2021 +0900
+
+    .gitignore 및 .gitattributes를 추가하세요.
