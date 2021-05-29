@@ -58,8 +58,7 @@ namespace Hoooon22_Program
                     }
 
                     // MySql DB Table 생성 (없으면)
-
-                    string sql = "Create table " + dbTable + "("
+                    string create_sql = "Create table if not exists " + dbTable + " ("
                                + "id int NOT NULL AUTO_INCREMENT PRIMARY KEY,"
                                + "date Date NOT NULL,"
                                + "title Varchar(45) NOT NULL,"
@@ -67,12 +66,12 @@ namespace Hoooon22_Program
                                + "source Varchar(45) NOT NULL,"
                                + "remarks Varchar(45)"
                                + ");";
-                    MySqlCommand cmd = new MySqlCommand(sql, conn);
+                    MySqlCommand cmd = new MySqlCommand(create_sql, conn);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("테이블 생성 성공");
+                    //MessageBox.Show("테이블 생성 성공");
 
                     // MySql DB Table 값 입력
-                    //string sql2 = "insert into";
+
                 }
             }
             catch (Exception ex) { MessageBox.Show(ex.Message); }
