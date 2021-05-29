@@ -27,10 +27,10 @@ namespace Hoooon22_Program
         string dbTable = "finace_content_tb"; // 접근할 테이블 설정
         string dbInfo()
         {
-            string dbServer = "";
-            string dbDatabase = "";
-            string dbUid = "";
-            string dbPwd = "";
+            string dbServer = "localhost";
+            string dbDatabase = "hpdb";
+            string dbUid = "root";
+            string dbPwd = "password";
             string dbSslMode = "none";
             string Conn = "Server=" + dbServer + ";"
                         + "Database=" + dbDatabase + ";"
@@ -57,8 +57,22 @@ namespace Hoooon22_Program
                         MessageBox.Show("서버에 연결");
                     }
 
-                    // Mysql DB Table 생성
+                    // MySql DB Table 생성 (없으면)
 
+                    string sql = "Create table " + dbTable + "("
+                               + "id int NOT NULL AUTO_INCREMENT PRIMARY KEY,"
+                               + "date Date NOT NULL,"
+                               + "title Varchar(45) NOT NULL,"
+                               + "amount int NOT NULL,"
+                               + "source Varchar(45) NOT NULL,"
+                               + "remarks Varchar(45)"
+                               + ");";
+                    MySqlCommand cmd = new MySqlCommand(sql, conn);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("테이블 생성 성공");
+
+                    // MySql DB Table 값 입력
+                    //string sql2 = "insert into";
                 }
             }
             catch (Exception ex) { MessageBox.Show(ex.Message); }
