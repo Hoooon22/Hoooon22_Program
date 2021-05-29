@@ -27,7 +27,7 @@
 
             <Label Content="Date" FontSize="15" VerticalAlignment="Center" FontWeight="Bold"
                        Grid.Column="0" Grid.Row="0"/>
-            <DatePicker x:Name="dtp01" HorizontalAlignment="Left" VerticalAlignment="Center"
+            <DatePicker Name="Date" HorizontalAlignment="Left" VerticalAlignment="Center"
                         Grid.Column="1" Grid.Row="0" />
             <Label Content="Title" FontSize="15" VerticalAlignment="Center" FontWeight="Bold"
                        Grid.Column="0" Grid.Row="1"/>

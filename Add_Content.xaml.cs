@@ -66,15 +66,24 @@ namespace Hoooon22_Program
                                + "source Varchar(45) NOT NULL,"
                                + "remarks Varchar(45)"
                                + ");";
-                    MySqlCommand cmd = new MySqlCommand(create_sql, conn);
-                    cmd.ExecuteNonQuery();
+                    MySqlCommand create_cmd = new MySqlCommand(create_sql, conn);
+                    create_cmd.ExecuteNonQuery();
                     //MessageBox.Show("테이블 생성 성공");
 
                     // MySql DB Table 값 입력
                     string insert_sql = "insert into " + dbTable
                         + "(date, title, amount, source, remarks)"
-                        + "values "
-                        + "(" + ");";
+                        + " values "
+                        + "(\'" + Date.Text + "\', \'" + Title.Text + "\', " + Amount.Text + ", \'" + Source.Text + "\', \'" + Remarks.Text + "\');";
+
+                    MessageBox.Show(insert_sql);
+
+                    MySqlCommand insert_cmd = new MySqlCommand(insert_sql, conn);
+                    insert_cmd.ExecuteNonQuery();
+                    MessageBox.Show("입력 성공!");
+
+                    conn.Close(); // 연결 종료
+                    Close(); // 윈도우 종료
                 }
             }
             catch (Exception ex) { MessageBox.Show(ex.Message); }
