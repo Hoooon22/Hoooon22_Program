@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using MySql.
 
 namespace Hoooon22_Program
 {
@@ -19,6 +20,8 @@ namespace Hoooon22_Program
     /// </summary>
     public partial class Add_Content : Window
     {
+        MySqlConnection conn;
+
         public Add_Content()
         {
             InitializeComponent();
