@@ -78,14 +78,18 @@ namespace Hoooon22_Program
                         //MessageBox.Show("서버에 연결");
                     }
 
-                    // Bring DB Table
+                    // Bring and Show DB Table
                     select_sql = "select * from " + dbTable + " order by date";
                     MySqlCommand select_cmd = new MySqlCommand(select_sql, conn);
                     MySqlDataReader rdr = select_cmd.ExecuteReader();
 
                     while (rdr.Read()) // Add each
                     {
-                        MessageBox.Show(rdr[0].ToString() + rdr[1].ToString() + rdr[2].ToString() + rdr[3].ToString() + rdr[4].ToString() + rdr[5].ToString());
+                        Grid grid = new Grid();
+                        this.Content = grid;
+                        grid.ShowGridLines = true;
+
+                        Finance.
                     }
 
                     conn.Close(); // 연결 종료

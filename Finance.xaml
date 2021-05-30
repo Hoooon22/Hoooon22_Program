@@ -13,7 +13,7 @@
         </Grid.ColumnDefinitions>
 
         <Border BorderBrush="Black" BorderThickness="2" CornerRadius="4" Margin="10,10,10,10">
-            <StackPanel Name="Contents" Grid.Column="0" >
+            <StackPanel Name="Contents" Grid.Column="0">
                 <Button Content="Add Content" HorizontalAlignment="Right"
                     Click="Button_Click"/>
 
