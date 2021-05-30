@@ -71,13 +71,21 @@ namespace Hoooon22_Program
                     //MessageBox.Show("테이블 생성 성공");
 
                     // MySql DB Table 값 입력
-                    string insert_sql = "insert into " + dbTable
+                    string insert_sql = "";
+                    if (Remarks.ToString() != "")
+                    {
+                        insert_sql = "insert into " + dbTable
                         + "(date, title, amount, source, remarks)"
                         + " values "
                         + "(\'" + Date.Text + "\', \'" + Title.Text + "\', " + Amount.Text + ", \'" + Source.Text + "\', \'" + Remarks.Text + "\');";
-
-                    MessageBox.Show(insert_sql);
-
+                    }
+                    else
+                    {
+                        insert_sql = "insert into " + dbTable
+                        + "(date, title, amount, source)"
+                        + " values "
+                        + "(\'" + Date.Text + "\', \'" + Title.Text + "\', " + Amount.Text + ", \'" + Source.Text + "\');";
+                    }
                     MySqlCommand insert_cmd = new MySqlCommand(insert_sql, conn);
                     insert_cmd.ExecuteNonQuery();
                     MessageBox.Show("입력 성공!");
