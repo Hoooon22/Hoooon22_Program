@@ -41,25 +41,6 @@ namespace Hoooon22_Program
                         + "SslMode=" + dbSslMode;
             return Conn;
         }
-
-        // Struct of Content
-        struct MyContent
-        {
-            public string date;
-            public string title;
-            public int amount;
-            public string source;
-            public string remarks;
-
-            public MyContent(string date, string title, int amount, string source, string remarks)
-            {
-                this.date = date;
-                this.title = title;
-                this.amount = amount;
-                this.source = source;
-                this.remarks = remarks;
-            }
-        }
         string select_sql;
 
         // Size
@@ -102,7 +83,10 @@ namespace Hoooon22_Program
                     MySqlCommand select_cmd = new MySqlCommand(select_sql, conn);
                     MySqlDataReader rdr = select_cmd.ExecuteReader();
 
+                    while (rdr.Read()) // Add each
+                    {
 
+                    }
 
                     conn.Close(); // 연결 종료
                 }

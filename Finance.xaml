@@ -19,7 +19,7 @@
 
                 <!--스크롤-->
                 <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="10,10,10,10">
-                    <WrapPanel>
+                    <WrapPanel Name="ContentList">
 
                     </WrapPanel>
                 </ScrollViewer>
