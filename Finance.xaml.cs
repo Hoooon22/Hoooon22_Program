@@ -42,6 +42,26 @@ namespace Hoooon22_Program
             return Conn;
         }
 
+        // Struct of Content
+        struct MyContent
+        {
+            public string date;
+            public string title;
+            public int amount;
+            public string source;
+            public string remarks;
+
+            public MyContent(string date, string title, int amount, string source, string remarks)
+            {
+                this.date = date;
+                this.title = title;
+                this.amount = amount;
+                this.source = source;
+                this.remarks = remarks;
+            }
+        }
+
+        // Size
         ScaleTransform scale = new ScaleTransform();
         double originWidth, originHeight;
 
