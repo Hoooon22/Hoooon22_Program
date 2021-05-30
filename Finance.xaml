@@ -17,9 +17,8 @@
                 Click="Button_Click"/>
         <Border BorderBrush="Black" BorderThickness="2" CornerRadius="4" Margin="10,50,10,10">
             <ScrollViewer>
-                <StackPanel Name="Contents" Grid.Column="0">
+                <StackPanel x:Name="Contents" Grid.Column="0">
                     
-
                 </StackPanel>
             </ScrollViewer>
         </Border>

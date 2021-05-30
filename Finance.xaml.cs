@@ -85,11 +85,21 @@ namespace Hoooon22_Program
 
                     while (rdr.Read()) // Add each
                     {
-                        Grid grid = new Grid();
-                        this.Content = grid;
-                        grid.ShowGridLines = true;
+                        Grid panel = new Grid(); // 사각형 감싸줄 Panel
 
-                        Finance.
+                        Rectangle rectangle = new Rectangle();
+                        rectangle.Fill = new SolidColorBrush(Colors.Blue);
+                        rectangle.Height = 50;
+
+                        TextBlock textBlock = new TextBlock();
+                        textBlock.Text = rdr[2].ToString();
+                        textBlock.HorizontalAlignment = System.Windows.HorizontalAlignment.Center;
+                        textBlock.VerticalAlignment = System.Windows.VerticalAlignment.Center;
+
+                        panel.Children.Add(rectangle);
+                        panel.Children.Add(textBlock);
+
+                        Contents.Children.Add(panel);
                     }
 
                     conn.Close(); // 연결 종료
