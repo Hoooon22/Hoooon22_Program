@@ -65,7 +65,7 @@ namespace Hoooon22_Program
 
             this.SizeChanged += new SizeChangedEventHandler(Window_Changed);
 
-            // DB Laod
+            // DB Load
             try
             {
                 using (conn = new MySqlConnection(dbInfo()))
@@ -76,10 +76,10 @@ namespace Hoooon22_Program
                         MessageBox.Show("서버에 연결");
                     }
 
+                    // DB 꺼내기
 
 
                     conn.Close(); // 연결 종료
-                    Close(); // 윈도우 종료
                 }
             }
             catch (Exception ex) { MessageBox.Show(ex.Message); }
