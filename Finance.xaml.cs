@@ -86,15 +86,16 @@ namespace Hoooon22_Program
                     while (rdr.Read()) // Add each
                     {
                         Grid panel = new Grid(); // 사각형 감싸줄 Panel
+                        panel.Margin = new Thickness(10, 20, 10, 0);
 
                         Rectangle rectangle = new Rectangle();
-                        rectangle.Fill = new SolidColorBrush(Colors.Blue);
+                        rectangle.Fill = new SolidColorBrush(Colors.Aquamarine);
                         rectangle.Height = 50;
 
                         TextBlock textBlock = new TextBlock();
                         textBlock.Text = rdr[2].ToString();
-                        textBlock.HorizontalAlignment = System.Windows.HorizontalAlignment.Center;
-                        textBlock.VerticalAlignment = System.Windows.VerticalAlignment.Center;
+                        textBlock.HorizontalAlignment = HorizontalAlignment.Center;
+                        textBlock.VerticalAlignment = VerticalAlignment.Center;
 
                         panel.Children.Add(rectangle);
                         panel.Children.Add(textBlock);
