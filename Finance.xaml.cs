@@ -90,7 +90,7 @@ namespace Hoooon22_Program
                         panel.Margin = new Thickness(10, 20, 10, 0);
 
                         Rectangle rectangle = new Rectangle();
-                        rectangle.Fill = new SolidColorBrush(Colors.Aquamarine);
+                        rectangle.Stroke = new SolidColorBrush(Colors.Aquamarine);
                         rectangle.Height = 50;
 
                         TextBlock textBlock = new TextBlock();
