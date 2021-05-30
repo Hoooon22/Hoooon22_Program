@@ -75,7 +75,7 @@ namespace Hoooon22_Program
                     conn.Open();
                     if (conn.State == ConnectionState.Open) // System.Data
                     {
-                        MessageBox.Show("서버에 연결");
+                        //MessageBox.Show("서버에 연결");
                     }
 
                     // Bring DB Table
@@ -85,7 +85,7 @@ namespace Hoooon22_Program
 
                     while (rdr.Read()) // Add each
                     {
-
+                        MessageBox.Show(rdr[0].ToString() + rdr[1].ToString() + rdr[2].ToString() + rdr[3].ToString() + rdr[4].ToString() + rdr[5].ToString());
                     }
 
                     conn.Close(); // 연결 종료
