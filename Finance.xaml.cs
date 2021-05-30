@@ -57,7 +57,8 @@ namespace Hoooon22_Program
 
         void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            originWidth = this.Width;
+            // Window 사이즈 변경 시 컨트롤 크기 변경
+            /*originWidth = this.Width;
             originHeight = this.Height;
 
             if (this.WindowState == WindowState.Maximized)
@@ -65,7 +66,7 @@ namespace Hoooon22_Program
                 ChangeSize(this.ActualWidth, this.ActualHeight);
             }
 
-            this.SizeChanged += new SizeChangedEventHandler(Window_Changed);
+            this.SizeChanged += new SizeChangedEventHandler(Window_Changed);*/
 
             // DB Load
             try
