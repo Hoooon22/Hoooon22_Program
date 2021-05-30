@@ -60,6 +60,7 @@ namespace Hoooon22_Program
                 this.remarks = remarks;
             }
         }
+        string select_sql;
 
         // Size
         ScaleTransform scale = new ScaleTransform();
@@ -96,7 +97,11 @@ namespace Hoooon22_Program
                         MessageBox.Show("서버에 연결");
                     }
 
-                    // DB 꺼내기
+                    // Bring DB Table
+                    select_sql = "select * from " + dbTable + " order by date";
+                    MySqlCommand select_cmd = new MySqlCommand(select_sql, conn);
+                    MySqlDataReader rdr = select_cmd.ExecuteReader();
+
 
 
                     conn.Close(); // 연결 종료
