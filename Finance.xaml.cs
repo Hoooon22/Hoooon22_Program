@@ -84,7 +84,7 @@ namespace Hoooon22_Program
                     MySqlCommand select_cmd = new MySqlCommand(select_sql, conn);
                     MySqlDataReader rdr = select_cmd.ExecuteReader();
 
-                    while (rdr.Read()) // Add Content each 
+                    while (rdr.Read()) // Add Content each
                     {
                         Grid panel = new Grid(); // 사각형 감싸줄 Panel
                         panel.Margin = new Thickness(10, 20, 10, 0);
