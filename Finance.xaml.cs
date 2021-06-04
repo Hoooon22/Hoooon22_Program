@@ -86,20 +86,53 @@ namespace Hoooon22_Program
 
                     while (rdr.Read()) // Add Content each
                     {
+                        // Grid
                         Grid panel = new Grid(); // 사각형 감싸줄 Panel
                         panel.Margin = new Thickness(10, 20, 10, 0);
+                        panel.ShowGridLines = true;
 
-                        Rectangle rectangle = new Rectangle();
-                        rectangle.Stroke = new SolidColorBrush(Colors.Aquamarine);
-                        rectangle.Height = 50;
+                        ColumnDefinition colDef1 = new ColumnDefinition();
+                        ColumnDefinition colDef2 = new ColumnDefinition();
+                        panel.ColumnDefinitions.Add(colDef1);
+                        panel.ColumnDefinitions.Add(colDef2);
+                        RowDefinition rowDef1 = new RowDefinition();
+                        RowDefinition rowDef2 = new RowDefinition();
+                        panel.RowDefinitions.Add(rowDef1);
+                        panel.RowDefinitions.Add(rowDef2);
 
-                        TextBlock textBlock = new TextBlock();
-                        textBlock.Text = rdr[2].ToString();
-                        textBlock.HorizontalAlignment = HorizontalAlignment.Center;
-                        textBlock.VerticalAlignment = VerticalAlignment.Center;
+                        // DB
+                        TextBlock title = new TextBlock();
+                        title.Text = rdr[2].ToString();
+                        title.HorizontalAlignment = HorizontalAlignment.Left;
+                        title.VerticalAlignment = VerticalAlignment.Center;
+                        Grid.SetRow(title, 0);
+                        Grid.SetColumn(title, 0);
+                        
+                        TextBlock date = new TextBlock();
+                        date.Text = rdr[1].ToString();
+                        date.HorizontalAlignment = HorizontalAlignment.Left;
+                        date.VerticalAlignment = VerticalAlignment.Center;
+                        Grid.SetRow(date, 0);
+                        Grid.SetColumn(date, 1);
 
-                        panel.Children.Add(rectangle);
-                        panel.Children.Add(textBlock);
+                        TextBlock amount = new TextBlock();
+                        amount.Text = rdr[3].ToString();
+                        amount.HorizontalAlignment = HorizontalAlignment.Left;
+                        amount.VerticalAlignment = VerticalAlignment.Center;
+                        Grid.SetRow(amount, 1);
+                        Grid.SetColumn(amount, 0);
+
+                        TextBlock source = new TextBlock();
+                        source.Text = rdr[4].ToString();
+                        source.HorizontalAlignment = HorizontalAlignment.Left;
+                        source.VerticalAlignment = VerticalAlignment.Center;
+                        Grid.SetRow(source, 1);
+                        Grid.SetColumn(source, 1);
+
+                        panel.Children.Add(title);
+                        panel.Children.Add(date);
+                        panel.Children.Add(amount);
+                        panel.Children.Add(source);
 
                         Contents.Children.Add(panel);
                     }
