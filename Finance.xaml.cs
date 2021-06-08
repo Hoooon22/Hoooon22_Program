@@ -23,7 +23,7 @@ namespace Hoooon22_Program
     /// </summary>
     public partial class Finance : Window
     {
-        // DB Load
+        // DB Loading
 
         MySqlConnection conn;
         string dbTable = "finace_content_tb"; // 접근할 테이블 설정
