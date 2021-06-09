@@ -170,8 +170,7 @@ namespace Hoooon22_Program
         // Reload (with another form)
         public void Finance_Reloaded()
         {
-            System.Windows.Threading.Dispatcher.CurrentDispatcher.Invoke(System.Windows.Threading.DispatcherPriority.Background,
-                new System.Threading.ThreadStart(delegate { }));
+            this.UpdateLayout();
         }
     }
 }

@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Hoooon22_Program"
         mc:Ignorable="d"
         Title="Finance" Height="450" Width="800">
-    <Grid Name="Finance_Grid">
+    <Grid x:Name="Finance_Grid">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
             <ColumnDefinition Width="1*"/>
