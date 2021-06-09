@@ -23,6 +23,8 @@ namespace Hoooon22_Program
     /// </summary>
     public partial class Add_Content : Window
     {
+        Finance finance1; // 동기화를 위한
+
         MySqlConnection conn;
         string dbTable = "finace_content_tb"; // 접근할 테이블 설정
         string dbInfo()
@@ -43,6 +45,11 @@ namespace Hoooon22_Program
         public Add_Content()
         {
             InitializeComponent();
+        }
+        public Add_Content(Finance finance)
+        {
+            InitializeComponent();
+            finance1 = finance;
         }
 
         private void Submit_Click(object sender, RoutedEventArgs e)
@@ -91,6 +98,7 @@ namespace Hoooon22_Program
                     MessageBox.Show("입력 성공!");
 
                     conn.Close(); // 연결 종료
+                    finance1.Finance_Reloaded();
                     Close(); // 윈도우 종료
                 }
             }

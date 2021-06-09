@@ -163,8 +163,15 @@ namespace Hoooon22_Program
         // Add Content
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Add_Content add_Content = new Add_Content();
+            Add_Content add_Content = new Add_Content(this);
             add_Content.Show();
+        }
+
+        // Reload (with another form)
+        public void Finance_Reloaded()
+        {
+            System.Windows.Threading.Dispatcher.CurrentDispatcher.Invoke(System.Windows.Threading.DispatcherPriority.Background,
+                new System.Threading.ThreadStart(delegate { }));
         }
     }
 }
