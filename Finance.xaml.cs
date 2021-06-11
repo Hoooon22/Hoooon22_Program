@@ -167,7 +167,7 @@ namespace Hoooon22_Program
             add_Content.Show();
         }
 
-        // Reload (with another form) ..
+        // Reload (with another form)
         public void Finance_Reloaded()
         {
             this.UpdateLayout();
